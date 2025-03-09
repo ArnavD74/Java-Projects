@@ -14,4 +14,4 @@ This repository contains a collection of Java-based projects demonstrating vario
 
 ### 3. **Java Chess**
 
--   A fully functional chess game implemented in Java using Object-Oriented Programming principles. The game features a chessboard with pieces that follow standard movement rules. It supports **Player vs. Player** or **Player vs. AI** modes, with check, checkmate, and special moves like castling and en passant.
+-   A fully functional chess game implemented in Java using Object-Oriented Programming principles. The game features a chessboard with pieces that follow standard movement rules. It supports Player vs. Player gameplay, with check, checkmate, and special moves like castling and en passant.
