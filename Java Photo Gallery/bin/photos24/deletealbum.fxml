@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.DeleteAlbumController" alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+    <TextField fx:id="albumNameField" promptText="Enter Album Name"/>
+    <Label text="Type in the name of the album that you want to delete"/>
+    <Button text="Delete Album" onAction="#handleDeleteAlbum"/>
+</VBox>

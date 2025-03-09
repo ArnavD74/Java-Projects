@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Android24</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="edit_tags">Edit Tags</string>
+    <string name="move_albums">Move Albums</string>
+    <string name="enter_album_name">Enter album name</string>
+    <string name="select_photos">Select Photos</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="rename">Rename</string>
+    <string name="swipe_to_scroll_between_pictures">Swipe to scroll between pictures</string>
+    <string name="long_press_an_album_to_rename_it">long press an album to rename it</string>
+    <string name="add2">Add Album</string>
+    <string name="delete2">Delete Album</string>
+    <string name="people">People</string>
+    <string name="enter_names_separated_by_commas">Enter names separated by commas</string>
+    <string name="location">Location</string>
+    <string name="enter_location">Enter location</string>
+    <string name="click_picture_instruction">click on a picture to view and edit tags</string>
+    <string name="search_photos">Search Photos</string>
+    <string name="search_by_tag_value_pairs">Search by tag-value pairs</string>
+    <string name="search_for_tag_value_pairs_e_g_people_bob_and_location_new_york">Search for tag-value pairs, e.g. \"location=N\" \nor \"people=Bob AND location=NYC\"</string>
+</resources>

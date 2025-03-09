@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <!-- MainActivity Destination -->
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.android24.MainActivity"
+        android:label="Home Screen"
+        tools:layout="@layout/activity_main" />
+
+    <!-- AlbumActivity Destination -->
+    <activity
+        android:id="@+id/albumActivity"
+        android:name="com.example.android24.AlbumActivity"
+        android:label="Album Details"
+        tools:layout="@layout/activity_album" />
+
+    <!-- Define the navigation from MainActivity to AlbumActivity -->
+    <!-- You can add actions here if needed -->
+</navigation>

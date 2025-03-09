@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.AlbumController" spacing="10">
+    
+    <!-- ScrollPane to allow for scrolling through the TilePane -->
+    <ScrollPane fitToWidth="true" fitToHeight="true">
+        <TilePane fx:id="photoGrid" prefColumns="4" hgap="10" vgap="10">
+            <!-- Photos will be added here in the controller -->
+        </TilePane>
+    </ScrollPane>
+
+    <ImageView fx:id="photoDisplayArea" />
+
+    <!-- Buttons at the bottom inside an HBox, wrapped in a VBox for consistent spacing from the bottom edge -->
+    <VBox>
+        <HBox spacing="10" alignment="center">
+            <Button fx:id="addPhotoButton" text="Add Photo" onAction="#addPhoto" />
+            <Button fx:id="removePhotoButton" text="Remove Photo" onAction="#removePhoto" />
+            <Button fx:id="previewPhoto" text="Preview Photo" onAction="#handlePreviewPhoto"/>
+            <Button fx:id="movePhotoButton" text="Move Photo" onAction="#movePhoto" />
+            <Button fx:id="copyPhotoButton" text="Copy Photo" onAction="#copyPhoto" />
+            <Button fx:id="slideshowButton" text="Slideshow" onAction="#handleSlideshow" />
+        </HBox>
+    </VBox>
+</VBox>

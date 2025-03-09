@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="mainLayout" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.TagController" style="-fx-padding: 10; -fx-spacing: 10;">
+    <!-- Singular Tags Section -->
+    <Label text="Singular Tags:"/>
+    <HBox spacing="10">
+        <Button text="Create Singular Tag" onAction="#handleAddSingularTag" />
+    </HBox>
+    <GridPane fx:id="singularTagGrid">
+        <!-- Singular tags will be added here dynamically -->
+    </GridPane>
+    <!-- Separator for visual distinction -->
+    <Separator orientation="HORIZONTAL" />
+    <!-- Multiple Tags Section -->
+    <Label text="Multiple Tags:"/>
+    <HBox spacing="10">
+        <Button text="Create Multiple Tag" onAction="#handleAddMultipleTag" />
+    </HBox>
+    <GridPane fx:id="multipleTagGrid">
+        <!-- Multiple tags will be added here dynamically -->
+    </GridPane>
+    <!-- Save Changes Button -->
+    <Button fx:id="saveChangesButton" text="Save Changes" onAction="#saveChanges" maxWidth="Infinity"/>
+</VBox>

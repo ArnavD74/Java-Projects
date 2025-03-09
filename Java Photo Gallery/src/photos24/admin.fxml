@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.AdminController" spacing="10" style="-fx-padding: 10;">
+    <Label text="Manage Users" />
+    <Label text="Please type the username to add or remove" style="-fx-text-fill: grey;" />
+    <HBox spacing="10">
+        <TextField fx:id="usernameField" promptText="Enter username" />
+        <Button text="Add User" onAction="#handleAddUser" />
+        <Button text="Remove User" onAction="#handleRemoveUser" />
+    </HBox>
+    <ListView fx:id="usersList" />
+    <HBox alignment="CENTER">
+        <Button text="Logout" style="-fx-background-color: #FF6666; -fx-text-fill: white;" onAction="#handleLogout" />
+    </HBox>
+</VBox>

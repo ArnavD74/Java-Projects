@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.SearchController" prefWidth="600" prefHeight="800">
+    <DatePicker fx:id="startDatePicker" promptText="Start Date" prefWidth="300"/>
+    <DatePicker fx:id="endDatePicker" promptText="End Date" prefWidth="300"/>
+    <TextField fx:id="tagTextField" promptText="Enter search query (e.g., Colors=Red OR Colors=Blue, Colors=Red AND Colors=Blue)" prefWidth="500"/>
+    <TilePane fx:id="searchResultGrid" prefColumns="3" hgap="10" vgap="10" prefWidth="500" prefHeight="500"/>
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Search" onAction="#searchPhotos"/>
+        <Button text="Save to New Album" onAction="#saveToNewAlbum"/>
+    </HBox>
+</VBox>

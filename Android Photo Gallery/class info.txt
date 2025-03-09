@@ -1,0 +1,11 @@
+AddAlbumDialog - activity for the popup when creating a new album
+Album - album object
+AlbumDetailsActivity - activity that shows once you click on an item from the MainActivity's GridView
+MainActivity - the main activity
+PhotoPreviewActivity - blank, will be used to preview photo/tags/info when you click on a photo from AlbumDetailsActivity
+PhotosAdapter - used to load pictures to the RecyclerView for AddAlbumDialog
+Picture - picture object
+PictureAdapter - used to load pictures to the RecyclerView for AlbumDetailsActivity
+RecyclerItemClickListener - used to detect if a user clicks on a photo in the AlbumDetailsActivity's Recycler and passes the photo's filepath as well
+StorageUtil - used to save albums to a file
+Tag - tag objects

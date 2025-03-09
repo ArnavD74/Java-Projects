@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.UserController" style="-fx-padding: 20;">
+    <HBox alignment="CENTER" spacing="10">
+        <VBox alignment="TOP_LEFT" spacing="10" HBox.hgrow="ALWAYS">
+            <Label fx:id="greetingLabel" style="-fx-text-fill: grey;"/>
+        </VBox>
+        <Button text="Logout" style="-fx-background-color: #FF6666; -fx-text-fill: white;" onAction="#handleLogout" />
+    </HBox>
+    <HBox alignment="CENTER" spacing="10" style="-fx-padding: 0 0 20 0;">
+        <Button text="Create New Album" onAction="#handleCreateNewAlbum" minWidth="100" />
+        <Button text="Delete Album" onAction="#handleDeleteAlbum" minWidth="100" />
+        <Button text="Rename Album" onAction="#handleRenameAlbum" minWidth="100" />
+        <Button text="Search Photos" onAction="#handleSearchPhotos" minWidth="100" />
+    </HBox>
+    <TilePane fx:id="albumsGrid" prefColumns="5" hgap="10" vgap="15" prefTileWidth="190" prefTileHeight="240" VBox.vgrow="ALWAYS" />
+</VBox>

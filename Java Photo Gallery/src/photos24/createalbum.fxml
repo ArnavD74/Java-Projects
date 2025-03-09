@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="photos24.CreateAlbumController" prefWidth="600" prefHeight="400" style="-fx-padding: 20;">
+    <TextField fx:id="albumNameField" promptText="Enter Album Name" maxWidth="300"/>
+    <Button text="Upload Photos" onAction="#handleUploadPhotos"/>
+    
+<HBox alignment="CENTER" spacing="10">
+    <Button fx:id="leftArrowButton" text="&lt;" onAction="#handlePreviousImage" />
+    <ImageView fx:id="imageView" fitWidth="400" fitHeight="300" preserveRatio="true"/>
+    <Button fx:id="rightArrowButton" text="&gt;" onAction="#handleNextImage" />
+</HBox>
+    
+    <Button text="Save Album" onAction="#handleSaveAlbum"/>
+</VBox>
